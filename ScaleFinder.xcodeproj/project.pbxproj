@@ -35,7 +35,6 @@
 		5575ED281E450D7900962792 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		55FFCFEA1E427C480009529D /* NoteFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoteFactory.cpp; sourceTree = "<group>"; };
 		55FFCFEB1E427C480009529D /* NoteFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NoteFactory.hpp; sourceTree = "<group>"; };
-		55FFCFED1E42A90F0009529D /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		55FFCFEF1E42E8170009529D /* Data.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Data.cpp; sourceTree = "<group>"; };
 		55FFCFF01E42E8170009529D /* Data.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Data.hpp; sourceTree = "<group>"; };
 		55FFCFF21E442BFF0009529D /* ScaleFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScaleFactory.cpp; sourceTree = "<group>"; };
@@ -79,7 +78,6 @@
 				5574CC841E262A570092DE67 /* BasicTypes.hpp */,
 				55FFCFEA1E427C480009529D /* NoteFactory.cpp */,
 				55FFCFEB1E427C480009529D /* NoteFactory.hpp */,
-				55FFCFED1E42A90F0009529D /* Utility.h */,
 				55FFCFEF1E42E8170009529D /* Data.cpp */,
 				55FFCFF01E42E8170009529D /* Data.hpp */,
 			);

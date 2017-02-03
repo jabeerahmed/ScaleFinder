@@ -31,5 +31,4 @@ HEADERS += \
     Data.hpp \
     NoteFactory.hpp \
     ScaleFactory.hpp \
-    Utility.h \
     ScaleFactory.hpp
