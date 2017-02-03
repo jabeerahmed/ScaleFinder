@@ -7,9 +7,17 @@
 //
 
 #include <iostream>
+#include "BasicTypes.hpp"
+#include "NoteFactory.hpp"
+#include "ScaleFactory.hpp"
+#include "Data.hpp"
+
+using namespace std;
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
+    std::cout << "Note - " << Cs << endl;
+    
     return 0;
 }
