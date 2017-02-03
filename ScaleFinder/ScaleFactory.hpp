@@ -12,6 +12,15 @@
 
 #include "BasicTypes.hpp"
 #include "NoteFactory.hpp"
+#include <map>
+#include <string>
 
+typedef std::map<std::string, Scale> Scales;
+
+namespace ScaleFactory {
+    Scale* GetScale(const std::string name);
+    Scale* GetScale(const Note& note, const Interval& interval);
+    Scales* GetScales();
+}
 
 #endif /* ScaleFactory_h */

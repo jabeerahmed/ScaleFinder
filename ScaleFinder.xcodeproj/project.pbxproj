@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5574CC7A1E25B51E0092DE67 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5574CC791E25B51E0092DE67 /* main.cpp */; };
+		5574CC851E262A570092DE67 /* BasicTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5574CC831E262A570092DE67 /* BasicTypes.cpp */; };
+		55FFCFEC1E427C480009529D /* NoteFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55FFCFEA1E427C480009529D /* NoteFactory.cpp */; };
+		55FFCFF11E42E8170009529D /* Data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55FFCFEF1E42E8170009529D /* Data.cpp */; };
+		55FFCFF31E442BFF0009529D /* ScaleFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55FFCFF21E442BFF0009529D /* ScaleFactory.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,16 @@
 /* Begin PBXFileReference section */
 		5574CC761E25B51E0092DE67 /* ScaleFinder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ScaleFinder; sourceTree = BUILT_PRODUCTS_DIR; };
 		5574CC791E25B51E0092DE67 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5574CC831E262A570092DE67 /* BasicTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BasicTypes.cpp; sourceTree = "<group>"; };
+		5574CC841E262A570092DE67 /* BasicTypes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BasicTypes.hpp; sourceTree = "<group>"; };
+		5575ED271E4506DE00962792 /* ScaleFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ScaleFactory.hpp; sourceTree = "<group>"; };
+		5575ED281E450D7900962792 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		55FFCFEA1E427C480009529D /* NoteFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoteFactory.cpp; sourceTree = "<group>"; };
+		55FFCFEB1E427C480009529D /* NoteFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NoteFactory.hpp; sourceTree = "<group>"; };
+		55FFCFED1E42A90F0009529D /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		55FFCFEF1E42E8170009529D /* Data.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Data.cpp; sourceTree = "<group>"; };
+		55FFCFF01E42E8170009529D /* Data.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Data.hpp; sourceTree = "<group>"; };
+		55FFCFF21E442BFF0009529D /* ScaleFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScaleFactory.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +55,7 @@
 		5574CC6D1E25B51E0092DE67 = {
 			isa = PBXGroup;
 			children = (
+				5575ED281E450D7900962792 /* .gitignore */,
 				5574CC781E25B51E0092DE67 /* ScaleFinder */,
 				5574CC771E25B51E0092DE67 /* Products */,
 			);
@@ -57,7 +72,16 @@
 		5574CC781E25B51E0092DE67 /* ScaleFinder */ = {
 			isa = PBXGroup;
 			children = (
+				5575ED271E4506DE00962792 /* ScaleFactory.hpp */,
+				55FFCFF21E442BFF0009529D /* ScaleFactory.cpp */,
 				5574CC791E25B51E0092DE67 /* main.cpp */,
+				5574CC831E262A570092DE67 /* BasicTypes.cpp */,
+				5574CC841E262A570092DE67 /* BasicTypes.hpp */,
+				55FFCFEA1E427C480009529D /* NoteFactory.cpp */,
+				55FFCFEB1E427C480009529D /* NoteFactory.hpp */,
+				55FFCFED1E42A90F0009529D /* Utility.h */,
+				55FFCFEF1E42E8170009529D /* Data.cpp */,
+				55FFCFF01E42E8170009529D /* Data.hpp */,
 			);
 			path = ScaleFinder;
 			sourceTree = "<group>";
@@ -120,6 +144,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5574CC7A1E25B51E0092DE67 /* main.cpp in Sources */,
+				5574CC851E262A570092DE67 /* BasicTypes.cpp in Sources */,
+				55FFCFEC1E427C480009529D /* NoteFactory.cpp in Sources */,
+				55FFCFF31E442BFF0009529D /* ScaleFactory.cpp in Sources */,
+				55FFCFF11E42E8170009529D /* Data.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +244,10 @@
 		5574CC7E1E25B51E0092DE67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"OTHER_CPLUSPLUSFLAGS[arch=*]" = (
+					"$(OTHER_CFLAGS)",
+					"-v",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -223,6 +255,10 @@
 		5574CC7F1E25B51E0092DE67 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"OTHER_CPLUSPLUSFLAGS[arch=*]" = (
+					"$(OTHER_CFLAGS)",
+					"-v",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -246,6 +282,7 @@
 				5574CC7F1E25B51E0092DE67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -64,11 +64,16 @@ const Interval Persian              ("Persian"              ,std::vector<Step>{ 
 /*                                                                         C    Db     E      F      G      Ab     B      C   */
 const Interval DoubleHarmonicMajor  ("Double Harmonic Major",std::vector<Step>{ Half,(Step)3,Half , Whole, Half ,(Step)3,Half});
 
+using namespace std;
+
+const std::set<Note> AllNotes({ C   , Cs  , D   , Ds  , E   , F   , Fs  , G   , Gs  , A   , As  , B  ,
+                                Dbb , Db  , Ebb , Eb  , Fb  , Gbb , Gb  , Abb , Ab  , Bbb , Bb  , Cb ,
+                                Bs  , Bss , Css , Csss, Dss , Es  , Esss, Fss , Fsss, Gss , Gsss, Ass });
 
 
-
-
-
+const set<Interval> AllIntervals( { Major, Minor, Dorian, Phrygian, Lydian, Mixolydian, Locrian, HarmonicMinor, HarmonicMajor,
+                                    HungarianMinor, JazzMinor, Prometheus, Augmented, Diminished, PhrygianDominant, WholeTone,
+                                    NeopolitanMajor, NeopolitanMinor, Persian, DoubleHarmonicMajor } );
 
 
 

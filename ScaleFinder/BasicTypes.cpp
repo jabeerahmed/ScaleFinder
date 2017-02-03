@@ -11,6 +11,11 @@
 #include <set>
 #include <vector>
 
+
+int Note::__instance_id = 0;
+int Scale::__instance_id = 0;
+int Interval::__instance_id = 0;
+
 Note Note::FindNote(unsigned int keyNumber){
     return NoteFactory::FindNote(keyNumber);
 }

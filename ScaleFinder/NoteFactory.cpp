@@ -75,7 +75,17 @@ namespace NoteFactory {
     Note FindNote(unsigned int keyNumber){
         return NoteFactoryImpl::GetFactory()->findNote(keyNumber);
     }
-    
+
+    Note FindNote(int keynumber, char c){
+        vector<Note> notes = FindAllNotes(keynumber);
+        
+        for (Note note : notes){
+            if (note.name()[0] == c) return note;
+        }
+        
+        return Note("bad note", -1);
+    }
+
     std::vector<Note> FindAllNotes(unsigned int keyNumber){
         return NoteFactoryImpl::GetFactory()->findAllNotes(keyNumber);
     }
@@ -83,4 +93,5 @@ namespace NoteFactory {
     Note GetNote(const std::string note) {
         return NoteFactoryImpl::GetFactory()->GetNote(note);
     }
+    
 }
