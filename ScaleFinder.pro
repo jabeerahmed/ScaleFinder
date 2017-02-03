@@ -9,11 +9,11 @@ CONFIG -= app_bundle
 
 TEMPLATE = app
 
-SOURCES += main.cpp \
-    BasicTypes.cpp \
-    Data.cpp \
-    NoteFactory.cpp \
-    ScaleFactory.cpp
+SOURCES += ScaleFinder/main.cpp \
+           ScaleFinder/BasicTypes.cpp \
+           ScaleFinder/Data.cpp \
+           ScaleFinder/NoteFactory.cpp \
+           ScaleFinder/ScaleFactory.cpp
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
@@ -27,8 +27,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 HEADERS += \
-    BasicTypes.hpp \
-    Data.hpp \
-    NoteFactory.hpp \
-    ScaleFactory.hpp \
-    ScaleFactory.hpp
+    ScaleFinder/BasicTypes.hpp \
+    ScaleFinder/Data.hpp \
+    ScaleFinder/NoteFactory.hpp \
+    ScaleFinder/ScaleFactory.hpp \
+    ScaleFinder/ScaleFactory.hpp

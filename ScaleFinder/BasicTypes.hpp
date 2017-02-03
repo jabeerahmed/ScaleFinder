@@ -17,7 +17,6 @@
 #include <string>
 #include <vector>
 #include <sstream>
-#include "Utility.h"
 
 class Note {
 protected:
