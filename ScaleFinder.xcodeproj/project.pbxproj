@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		5574CC7A1E25B51E0092DE67 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5574CC791E25B51E0092DE67 /* main.cpp */; };
 		5574CC851E262A570092DE67 /* BasicTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5574CC831E262A570092DE67 /* BasicTypes.cpp */; };
+		55DA5A841E4D6A950079DEB5 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DA5A821E4D69F70079DEB5 /* CoreMIDI.framework */; };
+		55DA5A861E4D6AA10079DEB5 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DA5A851E4D6AA10079DEB5 /* CoreServices.framework */; };
+		55DA5A8A1E4D6AC20079DEB5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DA5A871E4D6AC20079DEB5 /* AudioToolbox.framework */; };
+		55DA5A8B1E4D6AC20079DEB5 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DA5A881E4D6AC20079DEB5 /* AudioUnit.framework */; };
+		55DA5A8C1E4D6AC20079DEB5 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DA5A891E4D6AC20079DEB5 /* CoreAudio.framework */; };
+		55DA5A8E1E4D6ADD0079DEB5 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DA5A8D1E4D6ADD0079DEB5 /* CoreFoundation.framework */; };
+		55DA5A9C1E4DCB5B0079DEB5 /* RtMidi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55DA5A9A1E4DCB5B0079DEB5 /* RtMidi.cpp */; };
 		55FFCFEC1E427C480009529D /* NoteFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55FFCFEA1E427C480009529D /* NoteFactory.cpp */; };
 		55FFCFF11E42E8170009529D /* Data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55FFCFEF1E42E8170009529D /* Data.cpp */; };
 		55FFCFF31E442BFF0009529D /* ScaleFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55FFCFF21E442BFF0009529D /* ScaleFactory.cpp */; };
@@ -33,6 +40,14 @@
 		5574CC841E262A570092DE67 /* BasicTypes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BasicTypes.hpp; sourceTree = "<group>"; };
 		5575ED271E4506DE00962792 /* ScaleFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ScaleFactory.hpp; sourceTree = "<group>"; };
 		5575ED281E450D7900962792 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		55DA5A821E4D69F70079DEB5 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		55DA5A851E4D6AA10079DEB5 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		55DA5A871E4D6AC20079DEB5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		55DA5A881E4D6AC20079DEB5 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		55DA5A891E4D6AC20079DEB5 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		55DA5A8D1E4D6ADD0079DEB5 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		55DA5A9A1E4DCB5B0079DEB5 /* RtMidi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RtMidi.cpp; path = rtmidi/RtMidi.cpp; sourceTree = "<group>"; };
+		55DA5A9B1E4DCB5B0079DEB5 /* RtMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RtMidi.h; path = rtmidi/RtMidi.h; sourceTree = "<group>"; };
 		55FFCFEA1E427C480009529D /* NoteFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoteFactory.cpp; sourceTree = "<group>"; };
 		55FFCFEB1E427C480009529D /* NoteFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NoteFactory.hpp; sourceTree = "<group>"; };
 		55FFCFEF1E42E8170009529D /* Data.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Data.cpp; sourceTree = "<group>"; };
@@ -45,6 +60,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55DA5A8E1E4D6ADD0079DEB5 /* CoreFoundation.framework in Frameworks */,
+				55DA5A8A1E4D6AC20079DEB5 /* AudioToolbox.framework in Frameworks */,
+				55DA5A8B1E4D6AC20079DEB5 /* AudioUnit.framework in Frameworks */,
+				55DA5A8C1E4D6AC20079DEB5 /* CoreAudio.framework in Frameworks */,
+				55DA5A861E4D6AA10079DEB5 /* CoreServices.framework in Frameworks */,
+				55DA5A841E4D6A950079DEB5 /* CoreMIDI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +78,7 @@
 				5575ED281E450D7900962792 /* .gitignore */,
 				5574CC781E25B51E0092DE67 /* ScaleFinder */,
 				5574CC771E25B51E0092DE67 /* Products */,
+				55DA5A811E4D69F70079DEB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +93,8 @@
 		5574CC781E25B51E0092DE67 /* ScaleFinder */ = {
 			isa = PBXGroup;
 			children = (
+				55DA5A9A1E4DCB5B0079DEB5 /* RtMidi.cpp */,
+				55DA5A9B1E4DCB5B0079DEB5 /* RtMidi.h */,
 				5575ED271E4506DE00962792 /* ScaleFactory.hpp */,
 				55FFCFF21E442BFF0009529D /* ScaleFactory.cpp */,
 				5574CC791E25B51E0092DE67 /* main.cpp */,
@@ -82,6 +106,19 @@
 				55FFCFF01E42E8170009529D /* Data.hpp */,
 			);
 			path = ScaleFinder;
+			sourceTree = "<group>";
+		};
+		55DA5A811E4D69F70079DEB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55DA5A8D1E4D6ADD0079DEB5 /* CoreFoundation.framework */,
+				55DA5A871E4D6AC20079DEB5 /* AudioToolbox.framework */,
+				55DA5A881E4D6AC20079DEB5 /* AudioUnit.framework */,
+				55DA5A891E4D6AC20079DEB5 /* CoreAudio.framework */,
+				55DA5A851E4D6AA10079DEB5 /* CoreServices.framework */,
+				55DA5A821E4D69F70079DEB5 /* CoreMIDI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +180,7 @@
 			files = (
 				5574CC7A1E25B51E0092DE67 /* main.cpp in Sources */,
 				5574CC851E262A570092DE67 /* BasicTypes.cpp in Sources */,
+				55DA5A9C1E4DCB5B0079DEB5 /* RtMidi.cpp in Sources */,
 				55FFCFEC1E427C480009529D /* NoteFactory.cpp in Sources */,
 				55FFCFF31E442BFF0009529D /* ScaleFactory.cpp in Sources */,
 				55FFCFF11E42E8170009529D /* Data.cpp in Sources */,
@@ -242,22 +280,30 @@
 		5574CC7E1E25B51E0092DE67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"OTHER_CPLUSPLUSFLAGS[arch=*]" = (
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
+				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
-					"-v",
+					"-D__MACOSX_CORE__=0x1111",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
 		5574CC7F1E25B51E0092DE67 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"OTHER_CPLUSPLUSFLAGS[arch=*]" = (
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
+				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
-					"-v",
+					"-D__MACOSX_CORE__=0x1111",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
