@@ -2,7 +2,7 @@
 //  BasicTypes.cpp
 //  ScaleFinder
 //
-//  Created by Jabeer Ahmed (Intel) on 1/11/17.
+//  Created by Jabeer Ahmed on 1/11/17.
 //  Copyright © 2017 Me. All rights reserved.
 //
 

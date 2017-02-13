@@ -2,7 +2,7 @@
 //  ScaleFactory.cpp
 //  ScaleFinder
 //
-//  Created by Jabeer Ahmed (Intel) on 2/2/17.
+//  Created by Jabeer Ahmed on 2/2/17.
 //  Copyright © 2017 Me. All rights reserved.
 //
 
