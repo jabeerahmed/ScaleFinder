@@ -37,7 +37,8 @@ unix:!macx {
 
 win32 {
     message("Building for Windows")
-    DEFINES += __WINDOWS_MM__=0x1
+    DEFINES += __WINDOWS_MM__
+    LIBS += -lwinmm
 }
 
 
@@ -46,7 +47,7 @@ SOURCES += ScaleFinder/main.cpp \
            ScaleFinder/Data.cpp \
            ScaleFinder/NoteFactory.cpp \
            ScaleFinder/ScaleFactory.cpp \
-    ScaleFinder/rtmidi/RtMidi.cpp
+           ScaleFinder/rtmidi/RtMidi.cpp
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings

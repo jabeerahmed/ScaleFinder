@@ -12,6 +12,7 @@
 #include "ScaleFactory.hpp"
 #include "Data.hpp"
 #include <queue>
+#include <algorithm>
 #include "RtMidi.h"
 
 using namespace std;
