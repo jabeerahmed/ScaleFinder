@@ -72,8 +72,8 @@ public:
     }
     
 private:
-    std::vector<Step> _steps;
     std::string _name;
+    std::vector<Step> _steps;
     static int __instance_id;
     const int id = ++__instance_id;
 };
